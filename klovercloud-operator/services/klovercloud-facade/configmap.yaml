@@ -1,0 +1,66 @@
+apiVersion: v1
+data:
+  COMPANY_ADMIN_EMAIL: admin@klovercloud.com
+  COMPANY_ADMIN_PASSWORD: klovercloud
+  COMPANY_ID: 62a82defc0ada02a78fcdfdd
+  COMPANY_NAME: my-company
+  HARBOR_SERVICE_INTEGRATED: "false"
+  KAFKA_ACTIVITY_LOG_TOPIC: active-log
+  KCR_ENDPOINT: ""
+  KCR_INTEGRATED: "false"
+  KLOVERCLOUD_ACTIVITY_LOG_SERVICE_NAME: klovercloud-activity-log
+  KLOVERCLOUD_BILLING_SERVICE_NAME: klovercloud-billing
+  KLOVERCLOUD_CEPH_SERVICE_NAME: klovercloud-ceph
+  KLOVERCLOUD_CI_SERVICE_NAME: klovercloud-ci.tekton
+  KLOVERCLOUD_DASHBOARD_SERVICE_NAME: klovercloud-dashboard
+  KLOVERCLOUD_DATABASE_SERVICE_NAME: klovercloud-database
+  KLOVERCLOUD_DNS_MANAGER_SERVICE_NAME: klovercloud-dns-manager
+  KLOVERCLOUD_EXTERNAL_ENDPOINT_MANAGER_SERVICE_NAME: klovercloud-external-endpoint-manager
+  KLOVERCLOUD_FALCO_SERVICE_NAME: klovercloud-falco
+  KLOVERCLOUD_GATEWAY_SERVICE_ENDPOINT: https://multicluster-gateway-service.alpha.beta.klovercloud.io
+  KLOVERCLOUD_GENERAL_PUBLISHER_SERVICE_NAME: klovercloud-general-publisher
+  KLOVERCLOUD_HARBOR_SERVICE_NAME: klovercloud-harbor
+  KLOVERCLOUD_LDAP_SERVICE_NAME: klovercloud-ldap-agent
+  KLOVERCLOUD_LIGHT_HOUSE_COMMAND_SERVICE_NAME: klovercloud-light-house
+  KLOVERCLOUD_LIGHT_HOUSE_QUERY_SERVICE_NAME: klovercloud-light-house-query
+  KLOVERCLOUD_LISTENER_SERVICE_NAME: klovercloud-listener
+  KLOVERCLOUD_LOG_MANAGER_SERVICE_NAME: klovercloud-log-manager
+  KLOVERCLOUD_MAIL_SENDER_SERVICE_NAME: klovercloud-mail-sender
+  KLOVERCLOUD_MAIL_SERVICE_NAME: klovercloud-mail
+  KLOVERCLOUD_MANAGEMENT_SERVICE_NAME: klovercloud-management
+  KLOVERCLOUD_MARKETPLACE_SERVICE_NAME: klovercloud-marketplace
+  KLOVERCLOUD_MESSAGE_PUBLISHER_SERVICE_NAME: klovercloud-message-publisher
+  KLOVERCLOUD_METRICS_SERVICE_NAME: klovercloud-metrics
+  KLOVERCLOUD_MONITOR_SERVICE_NAME: klovercloud-monitor
+  KLOVERCLOUD_MULTI_CLUSTER_SERVICE_NAME: klovercloud-multi-cluster
+  KLOVERCLOUD_OBJECT_STORAGE_SERVICE_NAME: klovercloud-object-storage
+  KLOVERCLOUD_PAYMENT_ORCHESTRATOR_SERVICE_NAME: klovercloud-payment-orchestrator
+  KLOVERCLOUD_PAYMENT_SERVICE_NAME: klovercloud-payment
+  KLOVERCLOUD_PIPELINE_SERVICE_NAME: klovercloud-pipeline
+  KLOVERCLOUD_PRODUCT_SERVICE_NAME: klovercloud-product
+  KLOVERCLOUD_QUEUE_SERVICE_NAME: klovercloud-queue
+  KLOVERCLOUD_SLACK_HOOK_URL: https://hooks.slack.com/services/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
+  KLOVERCLOUD_SNAPSHOTER_SERVICE_NAME: klovercloud-snapshoter
+  KLOVERCLOUD_TALLY_SERVICE_NAME: klovercloud-tally
+  KLOVERCLOUD_TICKETING_SERVICE_NAME: klovercloud-ticketing
+  KLOVERCLOUD_VPC_SERVICE_NAME: klovercloud-vpc
+  KLOVERCLOUD_WEB_APP_DOMAIN: alpha.beta.klovercloud.io
+  MONGO_AUTH_DATABASE: admin
+  MONGO_PORT: "27017"
+  MONGO_SERVER: kcprod-mongodb-svc.klovercloud.svc.cluster.local
+  REDIS_HOST: facade-20211101062821111-ms
+  REDIS_PASSWORD: Hello*1234
+  REDIS_PERMISSION_TOPIC: load_signal2
+  REDIS_PORT: "6379"
+  RUN_MODE: DEVELOP
+  SUPER_ADMIN_EMAIL: superadmin@klovercloud.com
+  SUPER_ADMIN_LOGIN_ENABLED: "true"
+  SUPER_ADMIN_PASSWORD: hello123
+  USE_NETWORK_POLICY: "true"
+kind: ConfigMap
+metadata:
+  labels:
+    app: klovercloud-facade
+    role: klovercloud
+  name: klovercloud-facade-envar-config
+  namespace: klovercloud
